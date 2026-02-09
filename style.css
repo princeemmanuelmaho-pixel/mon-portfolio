@@ -34,7 +34,6 @@ nav a:hover { color: #d4af37; }
 
 .hero-section {
     height: 100vh;
-    background-image: url(welcome.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -228,3 +227,4 @@ footer {
         transform: translate(0);
     }
 }
+
