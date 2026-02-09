@@ -1,0 +1,230 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: #050510;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, .hex-item, nav a {
+    font-family: 'Rajdhani', sans-serif; 
+    text-transform: uppercase;
+}
+
+nav {
+    position: fixed;
+    top: 0; width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    text-align: right;
+    z-index: 1000;
+    border-bottom: 1px solid #d4af37;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav a:hover { color: #d4af37; }
+
+.hero-section {
+    height: 100vh;
+    background-image: url(welcome.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.center-hex-content {
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    padding: 20%;
+    border-radius: 40%;
+    border: 2px solid #d4af37; 
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.5); 
+}
+
+.center-hex-content h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.subtitle {
+    color: #d4af37;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+
+.content-section {
+    padding: 80px 20px;
+    border-bottom: 1px solid #222;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: #d4af37;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    border-bottom: 2px solid #d4af37;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.text-block p {
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.highlight-box {
+    border-left: 5px solid #d4af37;
+    background: rgba(212, 175, 55, 0.1);
+    padding: 20px;
+    font-style: italic;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.grid-3-cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.column h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 3px solid #555;
+    transition: transform 0.3s;
+}
+
+.card:hover { transform: translateX(10px); border-left-color: #d4af37; }
+
+.highlight-card { border-left-color: #d4af37; background: rgba(212, 175, 55, 0.05); }
+
+.date {
+    display: block;
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.card h4 { color: #d4af37; font-size: 1.2rem; }
+
+.hex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hex-item {
+    background: #111;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    padding: 15px 30px;
+    border-radius: 30px; 
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.hex-item:hover {
+    background: #d4af37;
+    color: #000;
+    box-shadow: 0 0 15px #d4af37;
+}
+
+.special { background: rgba(212, 175, 55, 0.2); border-width: 2px; }
+
+
+.projects-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    border: 1px solid #555;
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.project-card h3 { font-size: 1.5rem; margin-bottom: 10px; }
+
+.project-card.gold {
+    border-color: #d4af37;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+}
+
+.project-card.gold h3 { color: #d4af37; }
+
+
+footer {
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+#welcomeBtn {
+    margin-top: 15%;
+    padding: 5px 15px;
+    background-color: rgb(221, 27, 17);
+    border: 2px solid #d4af37;
+    font-family: 'Rajdhani',sans-serif
+    font-weigh bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px
+    border radius 5px;
+}
+
+#messageSecret {
+    display: none;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #fff;
+    line-height: 1.5;
+    animation: apparitionDouce 1s forwards;
+}
+
+@keyframes apparitionDouce {
+    fron {
+        opacity: 0;
+        transform: translate(-10px);
+    } 
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
